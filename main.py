@@ -1,20 +1,17 @@
-from list_demo_data import load_accomodations
 from list_CRUD import *
 
-accomodations = load_accomodations()
-id_counter = 3
 while True:
     print_info()
     opt = input()
     match opt:
         case '1':
-            print_accomodations(accomodations)
+            print_accomodations()
         case '2':
-            id_counter = create_accomodation(accomodations,id_counter)
+            create_accomodation()
         case '3':
-            edit_accomodation(accomodations)
+            edit_accomodation()
         case '4':
-            remove_accomodation(accomodations)
+            remove_accomodation()
         case '5':
             print('iseinu is programos')
             break
